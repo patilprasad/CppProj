@@ -12,6 +12,7 @@ class CDisplay{
 public:
 	void welcome();
 	void top ( string s);
+	void selectopt( string a);
 };
 
 
@@ -32,5 +33,19 @@ void CDisplay :: top (string s)
 	cout << blue << s << endl;
 	cout << reset << endl;
 }
+
+void CDisplay :: selectopt ( string s){
+	top(s);
+	cout << orange << " \t\t 1. Rent " << endl;
+	cout << orange << " \t\t 2. car loan " << endl;
+	cout << orange << " \t\t 3. Electricity and gas " << endl;
+	cout << orange << " \t\t 4. Phone " << endl;
+	cout << orange << " \t\t 5. Insurance " << endl;
+	cout << orange << " \t\t 6. Groceries " << endl;
+}
+
+
+
+
 
 #endif
