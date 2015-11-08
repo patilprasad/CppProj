@@ -1,5 +1,5 @@
-expman : expensemanagerui.o color.h ui.h
-	g++ expensemanager.o -o expman
+expman: expensemanagerui.o 
+	g++ -o expman expensemanager.o 
 
-expensemanagerui.o : expensemanagerui.cpp 
-	g++ expensemanagerui.cpp  -o expensemanagerui.o
+expensemanagerui.o : expensemanagerui.cpp color.h ui.h
+	g++ -c expensemanagerui.cpp 
