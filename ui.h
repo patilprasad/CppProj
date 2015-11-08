@@ -29,6 +29,7 @@ void CDisplay :: welcome ()
 
 void CDisplay :: top (string s)
 {
+
 	cout << blue << " Expense manager " << endl;
 	cout << blue << s << endl;
 	cout << reset << endl;
@@ -42,6 +43,8 @@ void CDisplay :: selectopt ( string s){
 	cout << orange << " \t\t 4. Phone " << endl;
 	cout << orange << " \t\t 5. Insurance " << endl;
 	cout << orange << " \t\t 6. Groceries " << endl;
+	cout << orange << " \t\t 7. Commute " << endl;
+	cout << orange << " \t\t 8. Miscellaneous " << endl;
 }
 
 

@@ -10,6 +10,9 @@ int main (){
 	cin.ignore();
 	system("clear");
 //	a.top("Menu");
-	a.selectopt("Menu");
+
+	a.selectopt("recurring");
 	cin.ignore();
+	system("clear");
+
 }		 
