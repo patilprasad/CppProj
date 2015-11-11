@@ -9,6 +9,7 @@
 using namespace std;
 
 class Attribute{
+public:
 	string username, statement;
 	double rent,carloan,elecgas,phone,insurance,groceries,commute,misc,rflag,threshold;
 	string GetUsername();
@@ -27,7 +28,7 @@ class Attribute{
 };
 
 class AttributeDB{
-
+public:
 	void SetUsername();
 	void SetRent();
 	void SetCarLoan();
@@ -42,11 +43,12 @@ class AttributeDB{
 	void SetThreshold();
 };
 
-class CDisplay{
+class Display{
 public:
         void welcome();
         void top ( string s);
-        void selectopt( string a);
+        void dismainmenu( string s);
+	void disrent( string s);
 };
 
 #endif

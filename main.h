@@ -1,3 +1,6 @@
+#ifndef _MAIN_H
+#define _MAIN_H
+
 #include "attributes.h"
 
 string Attribute:: GetUsername()
@@ -60,81 +63,68 @@ double Attribute:: GetThreshold()
 
 void AttributeDB:: SetUsername()
 {
-//	return username;
 }
 
 void AttributeDB:: SetRent()
 {
-//	return rent;
 }
 
 void AttributeDB:: SetCarLoan()
 {
-//	return carloan;
 }
 
 void AttributeDB:: SetElecGas()
 {
-//	return elecgas ;
 } 
 void AttributeDB:: SetPhone()
 {
-//	return phone;
 }
 void AttributeDB:: SetInsurance()
 {
-//	return insurance;
 }
 
 void AttributeDB:: SetGroceries()
 {
-//	return groceries;
 }
 
 void AttributeDB:: SetCommute()
 {
-//	return commute;
 }
 
 void AttributeDB:: SetMisc()
 {
-//	return misc;
 }
 
 void AttributeDB:: SetStatement()
 { 
-//	return statement;
 }
 void AttributeDB:: SetRecFlag()
 {
-//	return rflag;
 }
 void AttributeDB:: SetThreshold()
 {
-//	return threshold;
 }
 
 
-void CDisplay :: welcome ()
+void Display :: welcome ()
 {
-        cout << red  << " ****************************************************************************************" << endl;
-        cout << red  << " ****************************************************************************************" << endl;
-        cout << red  << " ****************************************************************************************" << endl;
-    cout << red  << " **************************"<< blue << " Welcome to Expense Manager " << red << "***********************************" << endl;
+        cout << red  << " \t\t ****************************************************************************************" << endl;
+        cout << red  << " \t\t ****************************************************************************************" << endl;
+    	cout << red  << " \t\t *************************"<< blue << " Welcome to Expense Manager " << red << "***********************************" << endl;
         cout << endl;
         cout << endl;
         cout << reset;
 }
 
-void CDisplay :: top (string s)
+void Display :: top (string s)
 {   
-
-        cout << blue << " Expense manager " << endl;
-        cout << blue << s << endl;
+	cout << " \n\n\n" ;
+        cout << blue << " \t\t Expense manager " << endl;
+        cout << blue << " \t\t " << s << endl;
         cout << reset << endl;
 }   
 
-void CDisplay :: selectopt ( string s){
+void Display :: dismainmenu ( string s){
         top(s);
         cout << orange << " \t\t 1. Rent " << endl;
         cout << orange << " \t\t 2. car loan " << endl;
@@ -146,3 +136,12 @@ void CDisplay :: selectopt ( string s){
         cout << orange << " \t\t 8. Miscellaneous " << endl;
 }
 
+void Display :: disrent (string s ){
+	top(s);
+	cout <<  magenta  << " \t\t 1. Occurs Monthly " << endl;
+	cout <<  magenta  << " \t\t 2. NOn-Recursion  " << endl;
+
+}
+
+
+#endif
