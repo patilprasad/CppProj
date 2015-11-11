@@ -1,2 +1,0 @@
-# CppProj
-Cpp project
